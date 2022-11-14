@@ -1,0 +1,72 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Layers/far-mountains.png" type="Texture" id=1]
+[ext_resource path="res://Layers/sky.png" type="Texture" id=2]
+[ext_resource path="res://Layers/trees.png" type="Texture" id=3]
+[ext_resource path="res://Layers/mountains.png" type="Texture" id=4]
+[ext_resource path="res://Layers/near-clouds.png" type="Texture" id=5]
+[ext_resource path="res://Layers/far-clouds.png" type="Texture" id=6]
+[ext_resource path="res://ParallaxBg.gd" type="Script" id=7]
+
+[node name="ParallaxBg" type="ParallaxBackground"]
+follow_viewport_enable = true
+script = ExtResource( 7 )
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="."]
+motion_scale = Vector2( 0.01, 0.01 )
+motion_mirroring = Vector2( 240, 0 )
+
+[node name="Sky" type="Sprite" parent="ParallaxLayer4"]
+scale = Vector2( 2, 2 )
+texture = ExtResource( 2 )
+offset = Vector2( 50, -50 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 240, 240 )
+region_filter_clip = true
+
+[node name="ParallaxLayer6" type="ParallaxLayer" parent="."]
+motion_scale = Vector2( 0, 0 )
+motion_mirroring = Vector2( 128, 0 )
+
+[node name="FarCloud" type="Sprite" parent="ParallaxLayer6"]
+visible = false
+texture = ExtResource( 6 )
+region_rect = Rect2( 0, 0, 50000, 240 )
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="."]
+visible = false
+motion_scale = Vector2( 0.3, 1 )
+motion_mirroring = Vector2( 160, 0 )
+
+[node name="FarMountain" type="Sprite" parent="ParallaxLayer3"]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 160, 230.823 )
+region_filter_clip = true
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
+motion_scale = Vector2( 0.3, 0.5 )
+motion_mirroring = Vector2( 640, 0 )
+
+[node name="CloseMountain" type="Sprite" parent="ParallaxLayer2"]
+texture = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 640, 240 )
+
+[node name="ParallaxLayer5" type="ParallaxLayer" parent="."]
+motion_scale = Vector2( 0, 1 )
+motion_mirroring = Vector2( 144, 0 )
+
+[node name="NearCloud" type="Sprite" parent="ParallaxLayer5"]
+visible = false
+texture = ExtResource( 5 )
+region_rect = Rect2( 0, 0, 30000, 244 )
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+motion_scale = Vector2( 0.4, 0.5 )
+motion_mirroring = Vector2( 720, 0 )
+
+[node name="Trees" type="Sprite" parent="ParallaxLayer"]
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 240, 240 )

@@ -1,0 +1,66 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Evil_Theme.tres" type="Theme" id=1]
+[ext_resource path="res://Button.gd" type="Script" id=2]
+[ext_resource path="res://ParallaxBg.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=4]
+[ext_resource path="res://grassy_tiles.tres" type="TileSet" id=5]
+[ext_resource path="res://Music/Intro_Music.wav" type="AudioStream" id=6]
+
+[node name="Win" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Player" parent="." instance=ExtResource( 4 )]
+position = Vector2( 105, 471 )
+
+[node name="ParallaxBg" parent="." instance=ExtResource( 3 )]
+offset = Vector2( 0, 300 )
+scale = Vector2( 3, 3 )
+transform = Transform2D( 3, 0, 0, 3, 0, 300 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 254.0
+margin_top = 29.0
+margin_right = 740.0
+margin_bottom = 117.0
+size_flags_horizontal = 3
+size_flags_vertical = 7
+theme = ExtResource( 1 )
+text = "You win!!!!"
+align = 1
+
+[node name="Button" type="Button" parent="."]
+margin_left = 398.0
+margin_top = 93.0
+margin_right = 590.0
+margin_bottom = 163.0
+theme = ExtResource( 1 )
+text = "Restart"
+script = ExtResource( 2 )
+
+[node name="TileMap" type="TileMap" parent="."]
+rotation = 1.5708
+scale = Vector2( 4, 4 )
+tile_set = ExtResource( 5 )
+cell_size = Vector2( 16, 16 )
+cell_custom_transform = Transform2D( 16, 0, 0, 16, 0, 0 )
+format = 1
+tile_data = PoolIntArray( -1048568, -1073741817, 0, -983032, -1073741817, 0, -917496, -1073741817, 0, -851960, -1073741817, 0, -786424, -1073741817, 0, -720888, -1073741817, 0, -655352, -1073741817, 0, -589816, -1073741817, 0, -524280, -1073741817, 0, -458744, -1073741817, 0, -393208, -1073741817, 0, -327672, -1073741817, 0, -262136, -1073741817, 0, -196600, -1073741817, 0, -131064, -1073741817, 0, -65528, -1073741817, 0, 393238, -1073741822, 0, 1769535, -1073741817, 0 )
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 51.0
+margin_top = 185.0
+margin_right = 1007.0
+margin_bottom = 359.0
+theme = ExtResource( 1 )
+text = "Attack (Left button or A)
+Jump (Space or Up)
+Special thanks to Anismuz for the background"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+volume_db = -10.0
+autoplay = true
+
+[connection signal="pressed" from="Button" to="Button" method="_on_Button_pressed"]

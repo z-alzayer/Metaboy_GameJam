@@ -1,0 +1,9 @@
+Requires imagemagick
+
+On Ubuntu:
+sudo apt update
+sudo apt install imagemagick
+
+To convert all GIFs in the current folder and subfolders:
+
+find . -name '*.gif' -exec bash -c 'mkdir -p 100x100/$(dirname "{}") && montage "{}" -tile x1 -geometry "10%x10%+0+0<" -interpolate Nearest -filter point -tile 5x -alpha On -background "rgba(0, 0, 0, 0.0)" -quality 100 "100x100/$(dirname "{}")/$(basename "{}" .gif).png" && echo "{}"' \;
