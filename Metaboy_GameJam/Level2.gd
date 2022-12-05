@@ -68,14 +68,14 @@ func _process(delta):
 		#if rand_y >= 0:
 		make_platform_bouncy(rand_y)
 		made_tile = false
-	if int(player.position.x) % int(500) == 0:
+	elif int(player.position.x) % int(500) == 0:
 		add_chunk_2(Vector2(player.position.x + 500, 0))
-	if int(player.position.x) % int(300) == 0:
+	elif int(player.position.x) % int(300) == 0:
 		add_chunk(Vector2(player.position.x + 500, 0))	
 		#print(player.position.x)
 		made_tile = false
 	time_sum += delta
-	if int(time_sum) % 50 == 0:
+	if int(time_sum) % 500 == 0:
 		made_tile = true
 		tile_pos = tile.world_to_map(player.position).x 
 
