@@ -69,11 +69,14 @@ shape = SubResource( 15 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 13 )
 animation = "run"
-frame = 2
+frame = 4
 playing = true
 
 [node name="AttackTimer" type="Timer" parent="."]
 autostart = true
+
+[node name="Position2D" type="Position2D" parent="."]
+position = Vector2( 28, 0 )
 
 [connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]
 [connection signal="timeout" from="AttackTimer" to="." method="_on_AttackTimer_timeout"]

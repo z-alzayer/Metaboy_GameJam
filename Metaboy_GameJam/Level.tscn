@@ -439,191 +439,144 @@ scale = Vector2( 5, 5 )
 
 [node name="Bouncy" parent="BouncingPlatforms" instance=ExtResource( 4 )]
 position = Vector2( 959, 422 )
-scale = Vector2( 2, 2 )
 
 [node name="Bouncy5" parent="BouncingPlatforms" instance=ExtResource( 4 )]
 position = Vector2( 2905, 410 )
-scale = Vector2( 2, 2 )
 
 [node name="Bouncy12" parent="BouncingPlatforms" instance=ExtResource( 4 )]
 position = Vector2( 2471, 537 )
-scale = Vector2( 2, 2 )
 
 [node name="Bouncy6" parent="BouncingPlatforms" instance=ExtResource( 4 )]
 position = Vector2( 3049, 465 )
-scale = Vector2( 2, 2 )
 
 [node name="Bouncy18" parent="BouncingPlatforms" instance=ExtResource( 4 )]
 position = Vector2( 3132, 499 )
-scale = Vector2( 2, 2 )
 
 [node name="Bouncy19" parent="BouncingPlatforms" instance=ExtResource( 4 )]
 position = Vector2( 3210, 528 )
-scale = Vector2( 2, 2 )
 
 [node name="Bouncy20" parent="BouncingPlatforms" instance=ExtResource( 4 )]
 position = Vector2( 3286, 564 )
-scale = Vector2( 2, 2 )
 
 [node name="Bouncy21" parent="BouncingPlatforms" instance=ExtResource( 4 )]
 position = Vector2( 3370, 606 )
-scale = Vector2( 2, 2 )
 
 [node name="Bouncy22" parent="BouncingPlatforms" instance=ExtResource( 4 )]
 position = Vector2( 3458, 645 )
-scale = Vector2( 2, 2 )
 
 [node name="Bouncy23" parent="BouncingPlatforms" instance=ExtResource( 4 )]
 position = Vector2( 3355, 406 )
-scale = Vector2( 2, 2 )
 
 [node name="Bouncy24" parent="BouncingPlatforms" instance=ExtResource( 4 )]
 position = Vector2( 3577, 639 )
-scale = Vector2( 2, 2 )
 
 [node name="Bouncy25" parent="BouncingPlatforms" instance=ExtResource( 4 )]
 position = Vector2( 3684, 587 )
-scale = Vector2( 2, 2 )
 
 [node name="Bouncy26" parent="BouncingPlatforms" instance=ExtResource( 4 )]
 position = Vector2( 3783, 611 )
-scale = Vector2( 2, 2 )
 
 [node name="Bouncy27" parent="BouncingPlatforms" instance=ExtResource( 4 )]
 position = Vector2( 3869, 618 )
-scale = Vector2( 2, 2 )
 
 [node name="Bouncy28" parent="BouncingPlatforms" instance=ExtResource( 4 )]
 position = Vector2( 3965, 626 )
-scale = Vector2( 2, 2 )
 
 [node name="Bouncy35" parent="BouncingPlatforms" instance=ExtResource( 4 )]
 position = Vector2( 4768, 407 )
-scale = Vector2( 2, 2 )
 
 [node name="Bouncy36" parent="BouncingPlatforms" instance=ExtResource( 4 )]
 position = Vector2( 6092, 287 )
-scale = Vector2( 2, 2 )
 
 [node name="Bouncy38" parent="BouncingPlatforms" instance=ExtResource( 4 )]
 position = Vector2( 6388, 198 )
-scale = Vector2( 2, 2 )
 
 [node name="Bouncy41" parent="BouncingPlatforms" instance=ExtResource( 4 )]
 position = Vector2( 7125, 270 )
-scale = Vector2( 2, 2 )
 
 [node name="Bouncy42" parent="BouncingPlatforms" instance=ExtResource( 4 )]
 position = Vector2( 7623, 255 )
-scale = Vector2( 2, 2 )
 
 [node name="Bouncy43" parent="BouncingPlatforms" instance=ExtResource( 4 )]
 position = Vector2( 7763, 336 )
-scale = Vector2( 2, 2 )
 
 [node name="Bouncy44" parent="BouncingPlatforms" instance=ExtResource( 4 )]
 position = Vector2( 7863, 285 )
-scale = Vector2( 2, 2 )
 
 [node name="Bouncy45" parent="BouncingPlatforms" instance=ExtResource( 4 )]
 position = Vector2( 7960, 238 )
-scale = Vector2( 2, 2 )
 
 [node name="Bouncy46" parent="BouncingPlatforms" instance=ExtResource( 4 )]
 position = Vector2( 8070, 240 )
-scale = Vector2( 2, 2 )
 
 [node name="Bouncy47" parent="BouncingPlatforms" instance=ExtResource( 4 )]
 position = Vector2( 8170, 242 )
-scale = Vector2( 2, 2 )
 
 [node name="Bouncy49" parent="BouncingPlatforms" instance=ExtResource( 4 )]
 position = Vector2( 10306, 228 )
-scale = Vector2( 2, 2 )
 
 [node name="Bouncy48" parent="BouncingPlatforms" instance=ExtResource( 4 )]
 position = Vector2( 9089, 224 )
-scale = Vector2( 2, 2 )
 
 [node name="Bouncy39" parent="BouncingPlatforms" instance=ExtResource( 4 )]
 position = Vector2( 6659, 377 )
-scale = Vector2( 2, 2 )
 
 [node name="Bouncy40" parent="BouncingPlatforms" instance=ExtResource( 4 )]
 position = Vector2( 6471, 196 )
-scale = Vector2( 2, 2 )
 
 [node name="Bouncy37" parent="BouncingPlatforms" instance=ExtResource( 4 )]
 position = Vector2( 4767, 295 )
-scale = Vector2( 2, 2 )
 
 [node name="Bouncy29" parent="BouncingPlatforms" instance=ExtResource( 4 )]
 position = Vector2( 4055, 582 )
-scale = Vector2( 2, 2 )
 
 [node name="Bouncy30" parent="BouncingPlatforms" instance=ExtResource( 4 )]
 position = Vector2( 4054, 521 )
-scale = Vector2( 2, 2 )
 
 [node name="Bouncy34" parent="BouncingPlatforms" instance=ExtResource( 4 )]
 position = Vector2( 4057, 462 )
-scale = Vector2( 2, 2 )
 
 [node name="Bouncy31" parent="BouncingPlatforms" instance=ExtResource( 4 )]
 position = Vector2( 4514, 327 )
-scale = Vector2( 2, 2 )
 
 [node name="Bouncy32" parent="BouncingPlatforms" instance=ExtResource( 4 )]
 position = Vector2( 4624, 325 )
-scale = Vector2( 2, 2 )
 
 [node name="Bouncy33" parent="BouncingPlatforms" instance=ExtResource( 4 )]
 position = Vector2( 4953, 383 )
-scale = Vector2( 2, 2 )
 
 [node name="Bouncy3" parent="BouncingPlatforms" instance=ExtResource( 4 )]
 position = Vector2( 1598, 622 )
-scale = Vector2( 2, 2 )
 
 [node name="Bouncy14" parent="BouncingPlatforms" instance=ExtResource( 4 )]
 position = Vector2( 1674, 622 )
-scale = Vector2( 2, 2 )
 
 [node name="Bouncy15" parent="BouncingPlatforms" instance=ExtResource( 4 )]
 position = Vector2( 1744, 621 )
-scale = Vector2( 2, 2 )
 
 [node name="Bouncy13" parent="BouncingPlatforms" instance=ExtResource( 4 )]
 position = Vector2( 1526, 622 )
-scale = Vector2( 2, 2 )
 
 [node name="Bouncy4" parent="BouncingPlatforms" instance=ExtResource( 4 )]
 position = Vector2( 1494, 352 )
-scale = Vector2( 2, 2 )
 
 [node name="Bouncy8" parent="BouncingPlatforms" instance=ExtResource( 4 )]
 position = Vector2( 1750, 445 )
-scale = Vector2( 2, 2 )
 
 [node name="Bouncy9" parent="BouncingPlatforms" instance=ExtResource( 4 )]
 position = Vector2( 2001, 484 )
-scale = Vector2( 2, 2 )
 
 [node name="Bouncy16" parent="BouncingPlatforms" instance=ExtResource( 4 )]
 position = Vector2( 2372, 351 )
-scale = Vector2( 2, 2 )
 
 [node name="Bouncy17" parent="BouncingPlatforms" instance=ExtResource( 4 )]
 position = Vector2( 2262, 351 )
-scale = Vector2( 2, 2 )
 
 [node name="Bouncy11" parent="BouncingPlatforms" instance=ExtResource( 4 )]
 position = Vector2( 2147, 549 )
-scale = Vector2( 2, 2 )
 
 [node name="Bouncy10" parent="BouncingPlatforms" instance=ExtResource( 4 )]
 position = Vector2( 2227, 710 )
-scale = Vector2( 2, 2 )
 
 [node name="Enemies" type="Node2D" parent="."]
 

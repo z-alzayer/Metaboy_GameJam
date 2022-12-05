@@ -2,13 +2,14 @@ extends KinematicBody2D
 
 # Adjustable variables of the player
 # export is used to allow to edit the values outside the script
-export var speed = 250 # The speed of the character
+export var speed = 300 # The speed of the character
 export var gravity = 40 # The gravity of the character
 export var jumpforce = 700 # The jump force of the character
 onready var player_vars = get_node("../Variables")
 onready var animation = $AnimatedSprite
 onready var atk_timer = $AttackTimer
 onready var win_pos = get_node("../Position2D")
+onready var attack_pos = get_node("Position2D")
 const arrow = preload("res://Arrow.tscn")
 
 var attack_possible = true
@@ -22,6 +23,7 @@ var health = 100
 func makeArrow():
 	if attack_possible:
 		var arrow_inst = arrow.instance()
+		arrow_inst.position = attack_pos.position
 #		arrow_inst.position.x = self.position.x + 0.01 
 		self.add_child(arrow_inst)
 		attack_possible = false

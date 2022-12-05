@@ -23,6 +23,7 @@ animations = [ {
 extents = Vector2( 15, 5.5 )
 
 [node name="Bouncy" type="StaticBody2D"]
+scale = Vector2( 2, 2 )
 script = ExtResource( 10 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
