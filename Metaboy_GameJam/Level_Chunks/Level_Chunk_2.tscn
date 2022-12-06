@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://grassy_tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://Bouncy.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Coin.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Donut.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Enemy.tscn" type="PackedScene" id=5]
 
 [node name="Node2D" type="Node2D"]
 
@@ -45,3 +46,18 @@ scale = Vector2( 3, 3 )
 [node name="Bouncy" parent="." instance=ExtResource( 2 )]
 position = Vector2( 529, 354 )
 scale = Vector2( 3, 3 )
+
+[node name="Bouncy3" parent="." instance=ExtResource( 2 )]
+position = Vector2( 127, 496 )
+scale = Vector2( 3, 3 )
+
+[node name="Position2D" type="Position2D" parent="."]
+position = Vector2( 1015, 5 )
+
+[node name="Enemy" parent="." instance=ExtResource( 5 )]
+position = Vector2( 790, 225 )
+scale = Vector2( 2.5, 2.5 )
+
+[node name="Enemy2" parent="." instance=ExtResource( 5 )]
+position = Vector2( 445, 412 )
+scale = Vector2( 2.5, 2.5 )

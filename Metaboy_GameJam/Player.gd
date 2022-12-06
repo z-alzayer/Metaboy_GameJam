@@ -52,12 +52,13 @@ func _physics_process(delta):
 		animation.play("attack_no_arrow")
 		makeArrow()
 		attack = true
+	elif Input.is_action_pressed("ui_right"):
+		motion.x += 150
+		motion.x = lerp(motion.x, 0, 0.25)
+		print("dashing")
 	else: # If none of these are pressed
 		if player_vars != null:
 			motion.x = lerp(motion.x, 0, 0.25) # set the x to 0 by smoothly transitioning by 0.25
-		elif player_vars == null and Input.is_action_pressed("ui_right"):
-			motion.x += 10
-			motion.x = lerp(motion.x, 0, 0.25)
 		elif player_vars == null and Input.is_action_pressed("ui_left"):
 			motion.x -= 100
 			motion.x = lerp(motion.x, 0, 0.25)	
@@ -79,7 +80,8 @@ func _physics_process(delta):
 	gameOver()
 func on_change():
 	if coins > 0:
-		print(coins)
+		pass
+
 
 
 func _on_AnimatedSprite_animation_finished():
@@ -94,7 +96,6 @@ func _on_AttackTimer_timeout():
 
 
 func _on_Win_body_entered(body):
-	print("working!!")
 	if body.is_in_group("Player"):
 		speed = 0
 		animation.stop()

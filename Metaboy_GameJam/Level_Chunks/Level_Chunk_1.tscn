@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://grassy_tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://Bouncy.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Coin.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Donut.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Enemy.tscn" type="PackedScene" id=5]
 
 [node name="Node2D" type="Node2D"]
 
@@ -15,3 +18,58 @@ tile_data = PoolIntArray( 262148, 24, 0, 262149, 25, 0, 262150, 25, 0, 262151, 2
 [node name="Bouncy" parent="TileMap" instance=ExtResource( 2 )]
 position = Vector2( 209.667, 95.6667 )
 scale = Vector2( 1, 1 )
+
+[node name="Position2D" type="Position2D" parent="."]
+position = Vector2( 1022, 0 )
+
+[node name="Donut" parent="." instance=ExtResource( 4 )]
+position = Vector2( 229, 148 )
+scale = Vector2( 3, 3 )
+
+[node name="Coin" parent="." instance=ExtResource( 3 )]
+position = Vector2( 629, 228 )
+scale = Vector2( 3.5, 3.5 )
+
+[node name="Coin2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 669, 192 )
+scale = Vector2( 3.5, 3.5 )
+
+[node name="Coin3" parent="." instance=ExtResource( 3 )]
+position = Vector2( 720, 179 )
+scale = Vector2( 3.5, 3.5 )
+
+[node name="Coin4" parent="." instance=ExtResource( 3 )]
+position = Vector2( 766, 179 )
+scale = Vector2( 3.5, 3.5 )
+
+[node name="Coin5" parent="." instance=ExtResource( 3 )]
+position = Vector2( 814, 180 )
+scale = Vector2( 3.5, 3.5 )
+
+[node name="Coin6" parent="." instance=ExtResource( 3 )]
+position = Vector2( 331, 347 )
+scale = Vector2( 3.5, 3.5 )
+
+[node name="Coin7" parent="." instance=ExtResource( 3 )]
+position = Vector2( 371, 311 )
+scale = Vector2( 3.5, 3.5 )
+
+[node name="Coin8" parent="." instance=ExtResource( 3 )]
+position = Vector2( 422, 298 )
+scale = Vector2( 3.5, 3.5 )
+
+[node name="Coin9" parent="." instance=ExtResource( 3 )]
+position = Vector2( 468, 298 )
+scale = Vector2( 3.5, 3.5 )
+
+[node name="Coin10" parent="." instance=ExtResource( 3 )]
+position = Vector2( 516, 299 )
+scale = Vector2( 3.5, 3.5 )
+
+[node name="Enemy" parent="." instance=ExtResource( 5 )]
+position = Vector2( 508, 324 )
+scale = Vector2( 2.5, 2.5 )
+
+[node name="Enemy2" parent="." instance=ExtResource( 5 )]
+position = Vector2( 347, 177 )
+scale = Vector2( 2.5, 2.5 )

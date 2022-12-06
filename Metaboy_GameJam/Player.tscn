@@ -69,7 +69,7 @@ shape = SubResource( 15 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 13 )
 animation = "run"
-frame = 4
+frame = 9
 playing = true
 
 [node name="AttackTimer" type="Timer" parent="."]

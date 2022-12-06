@@ -54,7 +54,8 @@ margin_right = 787.0
 margin_bottom = 413.0
 theme = ExtResource( 1 )
 text = "Attack (Left button or A)
-Jump (Space or Up)"
+Jump (Space or Up)
+Run (Right or D)"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 volume_db = -10.0
