@@ -51,11 +51,13 @@ func add_chunk_2(pos):
 	add_child(chunk)	
 	
 func make_platform_bouncy(rand_y):
-	var bouncer = bouncy.instance()
-	add_child(bouncer)
+	rand_y = randi() % 4
+	if rand_y < 2:
+		var bouncer = bouncy.instance()
+		add_child(bouncer)
 
-	bouncer.position = bounce_pos_gen
-	bouncer.position.y -= 20
+		bouncer.position = bounce_pos_gen
+		bouncer.position.y -= 20
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -65,20 +67,25 @@ func _ready():
 	tile_pos = tile.world_to_map(player.position).x - 10
 	y_pos = 9
 	timer.start()
-	for i in range(1, 1000):
+	for i in range(1, 300):
 		final_x_distance = make_platform(i * 5 , 9, 	3)
 		make_platform_bouncy(rand_y)
 	#add_chunk(Vector2(0,0))
 	#add_chunk_2(Vector2(700, 0))
-
+func make_more_platforms(distance, length):
+	if (player.position.x + distance) < final_x_distance:
+		for i in range(1, 300):
+			final_x_distance = make_platform(i * 5 , 9, 	length)
+			make_platform_bouncy(rand_y)
+			
 func make_level_section():
 	rand_y = randi() % 4
 	if rand_y == 1:
-		rand_y = randi() % 100
+		rand_y = randi() % 50
 		add_chunk_2(Vector2(farthest_tile_pos.position.x * tile_tracker, 0 + rand_y))
 
 	elif rand_y == 2:
-		rand_y = randi() % 100
+		rand_y = randi() % 50
 		add_chunk(Vector2(farthest_tile_pos.position.x * tile_tracker, 0 + rand_y))	
 		#print(player.position.x)
 	tile_tracker += 1
@@ -92,8 +99,9 @@ func _process(delta):
 	if made_tile == true:
 		make_level_section()
 		timer.start()
-
-
+	
+	make_more_platforms(3000, 300)
+	
 
 
 

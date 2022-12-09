@@ -10,8 +10,8 @@ onready var timer = $Timer
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 
-var thrust = Vector2(2000, 200)
-var torque = 0
+var thrust = Vector2(5000, -50)
+var torque = 1
 
 func _ready():
 	self.position.x = self.position.x + 0.1
